@@ -7,25 +7,42 @@
     <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Recipe</title>
+    <style>
+      form{
+        text-align: center;
+      }
+    </style>
 </head>
 <body>
     
         <h2 style="text-align: center;">RECIPE FINDER</h2>
         <p style="text-align: center;">What meal would you like to have?</p>
+        <hr>
+
+        <form class="form-inline" action="/action_page.php" >
+          <label for="Text">Meal Name:</label>
+         <input type="text" id="Text" placeholder="Githeri..." name="Text">
+        
+         <button type="submit" class="d-block">Submit</button>
+       </form>
+
+
     <div>
         <div class="row">
-          <div class="column" style="background-color:#aaa; margin-left: 50px; @media screen and (max-width: 600px) {
+          <div class="column" 
+          style="background-color:#aaa; margin-left: 50px; 
+          @media screen and (max-width: 600px) {
             .column {
-              margin-left: 20px;
-              
-            }
-          }
-        " onclick="location.href='meal.html';" style="cursor: pointer; @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
-">
+              margin-left: 20px;}
+          }" onclick="location.href='meal.html';" 
+          style="cursor: pointer"; 
+          @media screen and (max-width: 600px) {
+            .column {
+             width: 100%;
+                }
+            }">
+
+
             <h2>Breakfast</h2>
             <p>Some text..</p>
           </div>
