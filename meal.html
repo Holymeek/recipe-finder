@@ -3,62 +3,31 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-.form-inline {  
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-}
-
-.form-inline label {
-  margin: 5px 10px 5px 0;
-}
-
-.form-inline input {
-  vertical-align: middle;
-  margin: 5px 10px 5px 0;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-}
-
-.form-inline button {
-  padding: 10px 20px;
-  background-color: rgb(120, 125, 129);
-  border: 1px solid #ddd;
-  color: white;
-  cursor: pointer;
-}
-
-.form-inline button:hover {
-  background-color: rgb(88, 90, 95);
-}
-
-@media (max-width: 800px) {
-  .form-inline input {
-    margin: 10px 0;
+  form{
+    text-align: center;
   }
-  
-  .form-inline {
-    flex-direction: column;
-    align-items: stretch;
+  input{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 250px;
+    height: 200px;
   }
-}
+  label{
+    text-decoration: none;
+  }
 </style>
 </head>
 <body>
 
-<h2>INGREDIENTS I HAVE</h2>
-<p>recipe finder</p>
+<h2 style="text-align: center;">INGREDIENTS I HAVE</h2>
+<p style="text-align: center;">recipe finder</p>
 <hr>
 
 <form class="form-inline" action="/action_page.php">
-   <label for="Text">Text:</label>
-  <input type="text" id="Text" placeholder="Enter Text here" name="Text">
+   <label for="Text">Ingredient:</label>
+  <input type="text" id="Text" placeholder="Coriander, Spinach" name="Text">
  
-  <button type="submit">Submit</button>
+  <br> <button type="submit">Search</button>
 </form>
 
 </body>
